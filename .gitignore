@@ -1,0 +1,29 @@
+# Node / Next
+node_modules
+.next
+out
+
+# Env
+.env
+.env.local
+
+# Prisma / DB
+*.db
+*.db-journal
+
+# OS
+.DS_Store
+
+# Backups / disabled
+*.DISABLED.*
+*.disabled.*
+*.save
+
+# Docs & perso
+*.docx
+*.pdf
+compte rendus/
+
+# Tests
+test.http
+node_modules

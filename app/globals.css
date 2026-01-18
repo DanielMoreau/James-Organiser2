@@ -1,0 +1,77 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #111;
+}
+
+/* FOND GLOBAL */
+.app-background {
+  min-height: 100vh;
+  background-image: url("/fond-ecran-2.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px 96px; /* espace pour la bottom bar */
+}
+
+/* CARTE PRINCIPALE (GLASS) */
+.glass-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* LISTE DES NOTES */
+.note-card {
+  background: white;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* BOUTONS (BASE) */
+button {
+  font-family: inherit;
+}
+
+/* BARRE BASSE (RECHERCHE / NAV) */
+.bottom-bar {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 24px);
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 14px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 14px;
+}
+
+/* PETITES AMÉLIORATIONS MOBILE */
+@media (hover: hover) {
+  .note-card:hover {
+    transform: translateY(-1px);
+    transition: transform 0.15s ease;
+  }
+}
